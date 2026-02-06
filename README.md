@@ -29,3 +29,16 @@ Focused on minimizing false negatives to ensure patient safety.
 - Grad-CAM explainability
 - Larger dataset
 - Deployment
+
+## Model Selection
+
+Multiple models were evaluated including a baseline CNN, transfer learning, and fine-tuned MobileNetV2.
+The final model was selected based on minimizing false negatives while maintaining acceptable precision.
+
+Final configuration:
+- Model: Fine-tuned MobileNetV2
+- Threshold: 0.3
+- Recall (Pneumonia): ~98%
+- Accuracy: ~84%
+
+This configuration prioritizes clinical safety.
